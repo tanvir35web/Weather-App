@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url(./Images/bg.jpg);
+    background: url(./Images/wh.jpg);
     background-repeat: no-repeat;
 }
 
@@ -109,6 +109,7 @@ body{
     border-radius: 20px;
     margin-left: 130px;
     position: relative;
+    margin-bottom: 70px;
 }
 
 input::placeholder {
@@ -136,7 +137,7 @@ input::placeholder {
 .mainIcon img{
     width: 150px;
     margin-left: 290px;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 .wrapper{
@@ -201,7 +202,7 @@ margin-bottom: -80px;
     background-color: rgba(0, 255, 255, 0.436);
     width: 600px;
     height: 250px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 75px;
     color: rgb(192, 192, 192);
     outline: none;
@@ -212,6 +213,10 @@ margin-bottom: -80px;
     font-size: 30px;
     border: 1px solid rgba(255, 255, 255, 0.395);
 
+}
+
+.wrapperTime img{
+    width: 100px;
 }
 
 .wrapperTime2{
@@ -228,4 +233,19 @@ margin-bottom: -80px;
     padding: 30px;
     font-size: 30px;
     border: 1px solid rgba(255, 255, 255, 0.395);
+}
+.wrapperTime2 img{
+    width: 100px;
+}
+
+.tl{
+    display: flex;
+    align-items: center;
+}
+
+.classtimeAlign{
+    font-size: 90px;
+    font-weight: 100;
+    margin-left: 50px;
+    margin-top: -10px;
 }

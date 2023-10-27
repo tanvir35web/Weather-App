@@ -16,10 +16,6 @@ submitBtn.addEventListener('click', () =>{
         const sunRise = data.sys.sunrise;
         const sunSet = data.sys.sunset;
 
-        console.log(data);
-
-        console.log(sunSet);
-
         const cityName = document.getElementById("cityName").innerText = Location;
         const temp = document.getElementById("temp").innerText = temperature ;
         const des = document.getElementById("des").innerText = description;
