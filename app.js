@@ -1,12 +1,18 @@
+// Click button function
+
 const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener('click', () =>{
     const inputField = document.getElementById('inputField').value;
     
+//api fetching
+
     fetch("https://api.openweathermap.org/data/2.5/weather?q="+ inputField +"&appid=c8b4518d774aed6d971f2818bc46282e")
     .then((response) => response.json())
     .then((data) => {
-        
+       
+// Access data from api
+
         const Location = data.name;
         const temperature = (data.main.temp - 273.15).toFixed(0);
         const description = data.weather[0].description;
@@ -15,6 +21,8 @@ submitBtn.addEventListener('click', () =>{
         const pressure = data.main.pressure;
         const sunRise = data.sys.sunrise;
         const sunSet = data.sys.sunset;
+
+// Update data on Document using DOM
 
         const cityName = document.getElementById("cityName").innerText = Location;
         const temp = document.getElementById("temp").innerText = temperature ;
@@ -25,7 +33,7 @@ submitBtn.addEventListener('click', () =>{
         const airPressure = document.getElementById("pressure").innerText = "Air Pressure " + pressure + "Pa";        
 
 
-// time for sun Rise
+// time for Sunrise
 
         
         let hr = document.getElementById("hr");
@@ -42,7 +50,7 @@ submitBtn.addEventListener('click', () =>{
         min.innerHTML = (minutes  < 10 ? "0" : "") + minutes;
 
 
-// time for sunset
+// time for Sunset
 
         
         let hr2 = document.getElementById("hr2");
@@ -59,6 +67,6 @@ submitBtn.addEventListener('click', () =>{
         min2.innerHTML = (minutes2  < 10 ? "0" : "") + minutes2;
 
         
-    }).catch((response)=> alert("Please type the correct city name!"));
+    }).catch((response)=> alert("Please type the correct city name!"));  // alert message for invalid city
 }
 )
