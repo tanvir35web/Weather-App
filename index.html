@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather Update</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+            <div class="up">
+                <p>Weather Update</p>
+                <img src="./Images/weather-app.png">
+            </div>
+
+            <div class="leftMid">
+
+                    <div class="feeltemp">
+                        <img src="./Images/thermometer_2403472.png" alt="">
+                        <h1 id="feelsTemp">Temperature Feels Like 34</h1>
+                    </div>
+                    <div class="wind">
+                        <img src="./Images/wind_2768210.png" alt="">
+                        <h1 id="windSpeed">Wind Speed 3.5 Mile/Hr</h1>
+                    </div>
+                    <div class="pressure" >
+                        <img src="./Images/pressure-gauge_4117419.png" alt="">
+                        <h1 id="pressure">Air Pressure 980 Pa</h1>
+                    </div>
+
+            </div>
+            
+            <div class="down"> 
+                <img src="./Images/weather_8356632.png">               
+                <h1 id="temp">32</h1>
+                <div class="locDiv">
+                    <h1 id="cityName">Dhaka</h1>
+                    <h3 id="des">Sunny Day</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="wrapper">
+                <div class="mainIcon">
+                    <img src="./Images/weather-app.png">
+                </div>
+                <div class="inputArea">
+                    <input type="text" placeholder="Enter a city name" id="inputField">
+                    <button id="submitBtn">
+                    <i class='bx bx-search-alt' ></i>
+                </button>
+                </div>
+                <div class="others">
+                    <!-- others parameters -->
+                    
+                        <div class="wrapperTime">
+                            <h1>Sunrise</h1>
+                            
+                            <span id="hr">16</span>
+                            <span>:</span>
+        
+                            <span id="min">45</span>
+                            
+                        </div>
+                        
+                        
+                        <div class="wrapperTime2">
+                            <h1>Sunset</h1>
+                            
+                            <span id="hr2">16</span>
+                            <span>:</span>
+        
+                            <span id="min2">45</span>
+                            
+                        </div> 
+                
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>

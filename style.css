@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(./Images/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+}
+
+.left{
+    background-color: #67676718;
+    width: 1200px;
+    height: 100vh;
+    color: white;display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* backdrop-filter: blur(2px); */
+    
+}
+.right{
+    
+    width: 780px;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: #00000035;
+    border-left: 1px solid rgba(233, 233, 233, 0.466);
+}
+
+.up{
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 20px;
+    display: flex;
+}
+
+.up img{
+    width: 40px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.down{
+    padding-bottom: 30px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.395);
+}
+
+.down img{
+    width: 100px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+.down #temp{
+    font-size: 140px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.down #temp::after{
+    content: "°C";
+}
+
+.down #cityName{
+    font-size: 50px;
+}
+
+.locDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.inputArea{
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.right .wrapper .inputArea #inputField{
+    font-size: 22px;
+    padding: 10px 25px;
+    width: 450px;
+    color: rgb(192, 192, 192);
+    outline: none;
+    border: none;
+    background: #0000002e;
+    border-radius: 20px;
+    margin-left: 130px;
+    position: relative;
+}
+
+input::placeholder {
+    color: rgb(188, 188, 188);
+  }
+
+
+#submitBtn{
+    display: flex;
+    padding: 10px 20px;
+    font-weight: 700;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submitBtn i{
+    font-size: 40px;
+    color: #ffffffb7;
+    position: absolute;
+    left: 545px;
+    
+}
+.mainIcon img{
+    width: 150px;
+    margin-left: 290px;
+    margin-top: 50px;
+}
+
+.wrapper{
+    margin-top: 20px;
+
+}
+
+.leftMid{
+display: flex;
+justify-content: space-between;
+padding: 20px 100px;
+margin-bottom: -80px;
+}
+
+.feeltemp{
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.395);
+}
+.feeltemp img{
+    width: 80px;
+}
+#feelsTemp::after{
+    content: "°C";
+}
+
+.wind{
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.395);
+}
+.wind img{
+    width: 80px;
+}
+
+
+.pressure{
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.395);
+}
+.pressure img{
+    width: 80px;
+}
+
+.wrapperTime{
+    background-color: rgba(0, 255, 255, 0.436);
+    width: 600px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 75px;
+    color: rgb(192, 192, 192);
+    outline: none;
+    border: none;
+    background: #0000002e;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.395);
+
+}
+
+.wrapperTime2{
+    background-color: rgba(0, 255, 255, 0.436);
+    width: 600px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 75px;
+    color: rgb(192, 192, 192);
+    outline: none;
+    border: none;
+    background: #0000002e;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.395);
+}
